@@ -1,0 +1,59 @@
+/**
+ * All of the CSS for your public-facing functionality should be
+ * included in this file.
+ */
+
+.slider-posts {
+    position: relative;
+}
+
+.slick-prev,
+.slick-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.slick-prev {
+    left: 0;
+}
+
+.slick-next {
+    right: 0;
+}
+
+.slick-prev:focus,
+.slick-next:focus,
+.slick-prev:hover,
+.slick-next:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.slick-prev:focus,
+.slick-next:focus {
+    outline: none;
+}
+
+.slick-list {
+    overflow: hidden;
+}
+
+.slick-track {
+    display: flex;
+}
+
+.slider-post {
+    flex: 0 0 auto;
+    margin-right: 10px; /* Adjust spacing between slides */
+}
+
+/* Hide cloned slides */
+.slider-post.slick-cloned {
+    display: none;
+}
